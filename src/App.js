@@ -7,9 +7,9 @@ function App() {
 
   const[count, setCount] = useState(0)
 
-  useEffect(()=>{
-    document.title = `Voce clicou ${count} vezes`
-  },[count])
+  // useEffect(()=>{
+  //   document.title = `Voce clicou ${count} vezes`
+  // },[count])
 
   return (
     <>
