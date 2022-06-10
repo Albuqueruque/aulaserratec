@@ -2,6 +2,7 @@ import React,{useState, useEffect} from "react";
 import { ComponentePai } from "./Pages/ComponentePai";
 import {IndiretaPai} from "./Pages/IndiretaPai"
 import {Input} from "./Pages/Input"
+import {AdicionarLista} from "./Pages/AdicionarLista"
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
     <>
       {/* <ComponentePai/> */}
       {/* <IndiretaPai/> */}
-      <Input/>
+      {/* <Input/> */}
+      <AdicionarLista/>
     </>
   );
 }
