@@ -3,6 +3,8 @@ import { ComponentePai } from "./Pages/ComponentePai";
 import {IndiretaPai} from "./Pages/IndiretaPai"
 import {Input} from "./Pages/Input"
 import {AdicionarLista} from "./Pages/AdicionarLista"
+import {RenderizacaoCondicional} from "./Pages/RenderizacaoCondicional"
+
 
 function App() {
 
@@ -17,7 +19,8 @@ function App() {
       {/* <ComponentePai/> */}
       {/* <IndiretaPai/> */}
       {/* <Input/> */}
-      <AdicionarLista/>
+      {/* <AdicionarLista/> */}
+      <RenderizacaoCondicional/>
     </>
   );
 }
