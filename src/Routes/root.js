@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import {RenderizacaoCondicional} from "../Pages/RenderizacaoCondicional"
-import {AdicionarLista} from "../Pages/AdicionarLista"
+import { Home } from "../Pages/Home/Index";
+import { QuemSomos } from "../Pages/QuemSomos/Index";
 
 export const Root = () =>{
 
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<RenderizacaoCondicional/>}/>
-                <Route path="/addlista" element={<AdicionarLista/>}/>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/quemsomos" element={<QuemSomos/>}/>
             </Routes>
         </BrowserRouter>
     )
