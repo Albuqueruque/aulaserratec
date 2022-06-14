@@ -1,19 +1,29 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import {FirstText, SecondText, Container, AulaButton} from "./style.js"
+import {Input} from "../../Components/Input.js"
+import {AdicionarLista} from "../../Components/AdicionarLista.js"
 
 export const QuemSomos = () =>{
 
-    let navigate = useNavigate();
+    var {nome} = useParams()
+    var {idade} = useParams()
+
+    var navigate = useNavigate();
 
     function handleClick(){
         navigate("/")
     }
 
+
     return(
         <>
-            <h1> Quem Somos?</h1>
-            <h2> Aqui você irá descobrir quem somos e o que fazemos</h2>
-            <button onClick={handleClick}>Voltar para home</button>
+         <Container>
+            <FirstText>Quem somos?</FirstText>
+            <SecondText> Somos uma turma de reactJs</SecondText>
+            <AdicionarLista/>
+        </Container>
+        <AulaButton onClick={handleClick}>Voltar para home</AulaButton>
         </>
     )
 }
