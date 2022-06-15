@@ -11,7 +11,7 @@ export const Root = () =>{
         <BrowserRouter>
             <Routes>
                 <Route path={"/"} element={<Home/>}/>
-                <Route path={`/quemsomos/:nome/:idade`} element={<QuemSomos/>}/>
+                <Route path={`/quemsomos/:nome`} element={<QuemSomos/>}/>
                 <Route path ={ "*" }element={<NotFound/>}/>
             </Routes>
         </BrowserRouter>

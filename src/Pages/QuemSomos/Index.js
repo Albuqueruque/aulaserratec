@@ -7,19 +7,25 @@ import { api } from "../../Services/api.js";
 
 export const QuemSomos = (props) =>{
 
-    const [produto, setProduto] = useState({
-        nome:"",
-        preco: ""
-    })
+    // const [produto, setProduto] = useState({
+    //     nome:"",
+    //     preco: ""
+    // })
+
+    // const postProduto = async () =>{
+    //     const response = await api.post(`ecommerce/produtos/${produto}`)
+    //     console.log(response.data);
+    // }
 
 
-    useEffect(()=>{
-        const getUsuario = async () =>{
-            const response = await api.get(`/allproducts`)
-            setProduto(response.data)
-        }
-        getUsuario()
-    },[])
+    // useEffect(()=>{
+    //     const getUsuario = async () =>{
+    //         const response = await api.get(`ecommerce/produtos`)
+    //         console.log(response.data);
+    //     }
+
+    //     getUsuario()
+    // },[])
 
 
     var {nome} = useParams()
